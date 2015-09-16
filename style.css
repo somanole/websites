@@ -1,0 +1,542 @@
+@font-face
+{
+	font-family: "LTCircular";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/lineto-circular-book.eot");
+	src: url("../fonts/lineto-circular-book.eot?#iefix") format("embedded-opentype"),url("../fonts/lineto-circular-book.woff2") format("woff2"),url("../fonts/lineto-circular-book.woff") format("woff"),url("../fonts/lineto-circular-book.svg#lineto-circular-book") format("svg");
+}
+html
+{
+	box-sizing: border-box;
+	font-size: 15px;
+	moz-box-sizing: border-box;
+	ms-box-sizing: border-box;
+	o-box-sizing: border-box;
+	webkit-box-sizing: border-box;
+}
+*,*:before,*:after
+{
+	box-sizing: inherit;
+	moz-box-sizing: inherit;
+	ms-box-sizing: inherit;
+	o-box-sizing: inherit;
+	webkit-box-sizing: inherit;
+}
+body
+{
+	color: #757575;
+	font-family: "Lato", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+	line-height: 1.47;
+	margin: 0;
+	moz-osx-font-smoothing: grayscale;
+	padding: 0;
+	webkit-font-smoothing: antialiased;
+	webkit-transition: none;
+}
+.backgroundimage
+{
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	text-align: right;
+	width: 500px;
+	z-index: 0;
+}
+@media all and (max-width:1440px)
+{
+	.backgroundimage
+	{
+		width: 480px;
+	}
+}
+@media all and (max-width:1280px)
+{
+	.backgroundimage
+	{
+		width: 400px;
+	}
+}
+@media all and (max-width:930px)
+{
+	.backgroundimage
+	{
+		width: 350px;
+	}
+}
+@media all and (max-width:850px)
+{
+	.backgroundimage
+	{
+		width: 310px;
+	}
+}
+@media all and (max-width:770px)
+{
+	.backgroundimage
+	{
+		width: 330px;
+	}
+	.backgroundimage img.mobile
+	{
+		display: inline;
+	}
+	.backgroundimage img.classic
+	{
+		display: none;
+	}
+}
+@media all and (max-width:700px)
+{
+	.backgroundimage
+	{
+		width: 310px;
+	}
+}
+.backgroundimage .mobile
+{
+	display: none;
+}
+.backgroundimage img
+{
+	margin-right: -90px;
+	max-width: 100%;
+	z-index: 0;
+}
+@media all and (min-width:1440px)
+{
+	.backgroundimage img
+	{
+		margin-right: 0;
+	}
+}
+@media all and (max-width:930px)
+{
+	.backgroundimage img
+	{
+		margin-right: -130px;
+	}
+}
+.privacy .backgroundimage
+{
+	display: none;
+}
+.outerglobalcontainer
+{
+	background: #fff;
+}
+.globalcontainer
+{
+	box-sizing: border-box;
+	padding-bottom: 0px;
+	padding-left: 185px;
+	padding-top: 225px;
+	position: relative;
+}
+@media all and (max-width:1200px)
+{
+	.globalcontainer
+	{
+		padding-bottom: 150px;
+		padding-left: 160px;
+	}
+}
+@media all and (max-width:850px)
+{
+	.globalcontainer
+	{
+		padding-left: 135px;
+	}
+}
+@media all and (max-width:700px)
+{
+	.globalcontainer
+	{
+		padding-bottom: 100px;
+		padding-left: 100px;
+		padding-top: 160px;
+	}
+}
+@media all and (max-width:600px)
+{
+	.globalcontainer
+	{
+		padding-left: 80px;
+		padding-top: 160px;
+	}
+}
+@media all and (max-width:500px)
+{
+	.globalcontainer
+	{
+		padding-left: 40px;
+		padding-top: 120px;
+	}
+}
+.contentcontainer
+{
+	max-width: 600px;
+	padding-right: 50px;
+}
+@media all and (max-width:1024px)
+{
+	.contentcontainer
+	{
+		max-width: 500px;
+	}
+}
+@media all and (max-width:500px)
+{
+	.contentcontainer
+	{
+		padding-right: 45px;
+	}
+}
+.section
+{
+	padding: 50px 0;
+}
+.section.gray
+{
+	background-color: #e9eaea;
+}
+@media all and (min-width:1600px)
+{
+	.section
+	{
+		padding: 100px 0;
+	}
+}
+#menu
+{
+	line-height: 26px;
+	position: absolute;
+	right: 24px;
+	top: 18px;
+	z-index: 999;
+}
+#menu a
+{
+	text-decoration: none;
+}
+#menu ul
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu a
+{
+	color: #757575;
+}
+#menu a:hover
+{
+	color: #424242;
+}
+#menu li
+{
+	display: inline-block;
+	font-size: 14px;
+	padding-left: 20px;
+}
+@media all and (min-width:1600px)
+{
+	#menu li
+	{
+		font-size: 18px;
+	}
+}
+@media all and (max-width:500px)
+{
+	#menu
+	{
+		right: 40px;
+		top: 30px;
+	}
+}
+#footer
+{
+	padding: 24px 40px 0px 40px;
+	position: relative;
+}
+#footer p
+{
+	line-height: 23px;
+	margin-bottom: 0;
+	margin-top: 1em;
+}
+#footer a
+{
+	color: #adafb2;
+}
+#footer a:hover
+{
+	color: #797c80;
+}
+.investor
+{
+	padding-top: 70px;
+}
+.hide,.hide-inline
+{
+	display: none;
+}
+.lt-ie9 .hide
+{
+	display: block;
+}
+.lt-ie9 .hide-inline
+{
+	display: inline;
+}
+.lt-ie9 .read-more
+{
+	display: none;
+}
+.lt-ie9 .ellipsis
+{
+	display: none;
+}
+h2
+{
+	font-size: 24px;
+}
+ul
+{
+	font-size: inherit;
+}
+ul ul
+{
+	list-style-type: none;
+}
+ul ul>li:before
+{
+	content: "�€“";
+	margin-left: -1.1em;
+	position: absolute;
+}
+@media all and (min-width:1600px)
+{
+	ul
+	{
+		font-size: 18px;
+	}
+}
+p
+{
+	margin-top: 0;
+}
+p.large
+{
+	font-size: 22px;
+	margin: 0;
+	padding: 0;
+}
+@media all and (min-width:1600px)
+{
+	p.large
+	{
+		font-size: 30px;
+	}
+}
+p.greylight
+{
+	color: #adafb2;
+	font-size: 13px;
+}
+@media all and (min-width:1600px)
+{
+	p.greylight
+	{
+		font-size: 15px;
+	}
+}
+@media all and (min-width:1600px)
+{
+	p
+	{
+		font-size: 18px;
+	}
+}
+.story p
+{
+	margin-top:150px;
+	font-size:20px;
+}
+.story2 p
+{
+	margin-top:50px;
+	font-size:15px;
+}
+.story3 p
+{
+	margin-top:30px;
+	font-size:15px;
+}
+#entropilogo
+{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100px 24px;
+	color: #FF0000;
+	height: 24px;
+	left: 24px;
+	position: absolute;
+	text-shadow: none;
+	top: 18px;
+	width: 100px;
+	z-index: 999;
+	font-style: normal;
+	font-family: "Roboto", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+	font-size: 25px;
+}
+#entropilogo img
+{
+	image-rendering: optimizeQuality;
+}
+@media all and (max-width:500px)
+{
+	#entropilogo
+	{
+		left: 40px;
+		top: 30px;
+	}
+}
+.lt-ie9 #entropilogo
+{
+	background-image: url(../img/entropilogo_1x.png);
+}
+#footer-entropilogo
+{
+	background: url(../img/footer-entropilogo_2x.png) 0 0 no-repeat;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 75px 18px;
+	color: transparent;
+	font: 0 / 0 a;
+	height: 18px;
+	position: absolute;
+	right: 30px;
+	text-shadow: none;
+	top: 39px;
+	width: 75px;
+}
+.lt-ie9 #footer-entropilogo
+{
+	background-image: url(../img/footer-entropilogo_1x.png);
+}
+#gaitlogo
+{
+	image-rendering: optimizeQuality;
+	margin-bottom: -70px;
+	margin-left: -45px;
+	width: 200px;
+}
+@media all and (max-width:1280px)
+{
+	#gaitlogo
+	{
+		margin-bottom: -60px;
+		margin-left: -78px;
+		width: 166px;
+	}
+}
+@media all and (max-width:930px)
+{
+	#gaitlogo
+	{
+		margin-bottom: -50px;
+		margin-left: -68px;
+		width: 145px;
+	}
+}
+@media all and (max-width:850px)
+{
+	#gaitlogo
+	{
+		margin-bottom: -45px;
+		margin-left: -59px;
+		width: 128px;
+	}
+}
+@media all and (max-width:700px)
+{
+	#gaitlogo
+	{
+		margin-left: -59px;
+		width: 128px;
+	}
+}
+#howitbegins
+{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 260px 49px;
+	height: 49px;
+	image-rendering: optimizeQuality;
+	margin-bottom: 71px;
+	margin-left: +125px;
+	margin-top: -60px;
+    font-size: 35px;
+	position: relative;
+	text-shadow: none;
+	width: 500px;
+	margin-left: +125px;
+    font-size: 35px;
+}
+@media all and (max-width:700px)
+{
+	#howitbegins
+	{
+		background: url(../img/howitbegins-medium_2x.png) 0 0 no-repeat;
+		background-size: 230px 43px;
+		height: 43px;
+		width: 230px;
+	}
+}
+@media all and (max-width:449px)
+{
+	#howitbegins
+	{
+		background: url(../img/howitbegins-small_2x.png) 0 0 no-repeat;
+		background-size: 190px 36px;
+		height: 36px;
+		width: 190px;
+	}
+}
+.lt-ie9 #howitbegins
+{
+	background-image: url(../img/howitbegins-large_1x.png);
+}
+@media all and (max-width:700px)
+{
+	.lt-ie9 #howitbegins
+	{
+		background-image: url(../img/howitbegins-medium_1x.png);
+	}
+}
+@media all and (max-width:449px)
+{
+	.lt-ie9 #howitbegins
+	{
+		background-image: url(../img/howitbegins-small_1x.png);
+	}
+}
+#howitbegins:after
+{
+	content: url(../img/howitbegins-large_2x.png) url(../img/howitbegins-large_1x.png) url(../img/howitbegins-medium_2x.png) url(../img/howitbegins-medium_1x.png) url(../img/howitbegins-small_2x.png) url(../img/howitbegins-small_1x.png);
+	display: none;
+}
+#signature
+{
+	margin-left: -15px;
+	margin-top: 20px;
+	max-width: 80%;
+}
+@media all and (max-width:1024px)
+{
+	#signature
+	{
+		max-width: 100%;
+	}
+}
