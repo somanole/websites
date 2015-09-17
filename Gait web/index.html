@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html class="js no-touch svg no-oldie no-ie ac-player-desktop has-modal" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			
 		<meta charset="utf-8">
@@ -29,25 +30,77 @@
 		<!-- <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css"> -->
 
 		<link rel="shortcut icon" type="image/x-icon" href="./resources/favicon.ico">
+
+		<script type="text/javascript">
+
+		var floatingbanner={
+			
+			addoffset: [440, 15], 
+			comboid: "visiblecombo", 
+			location: ["top", "right"],
+
+			navigate:function(){
+			var selectobj=this.comboref.getElementsByTagName("select")[0]
+			if (selectobj.options[selectobj.selectedIndex].value!="default")
+				window.location=selectobj.options[selectobj.selectedIndex].value
+			},
+
+			floatcombo:function(){
+			var docElement=(document.compatMode=='CSS1Compat')? document.documentElement: document.body
+			if (this.location[0]=="top")
+				this.comboref.style.top=0+this.addoffset[0]+"px"
+			else if (this.location[0]=="bottom")
+				this.comboref.style.bottom=0+this.addoffset[0]+"px"
+			if (this.location[1]=="left")
+				this.comboref.style.left=0+this.addoffset[1]+"px"
+			else if (this.location[1]=="right")
+				this.comboref.style.right=0+this.addoffset[1]+"px"
+			},
+
+			init:function(){
+			var width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth
+			if (width<"1000"){
+				this.location=["top", "left"]
+				this.addoffset=[0, 0]
+			}
+			this.comboref=document.getElementById(this.comboid)
+			this.comboref.style.visibility="visible"
+			this.floatcombo()
+			}
+		}
+
+		if (window.addEventListener)
+		window.addEventListener("load", function(){floatingbanner.init()}, false)
+		else if (window.attachEvent)
+		window.attachEvent("onload", function(){floatingbanner.init()})
+
+		</script>
 	</head>
 
-	<body class="environment page-overview">
+	<body class="page-overview">
 		<div id="main" role="main">
-			
 			<section class="section section-one section-one-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-block section-block-intro row greytext">	
-							  <img class ="logo-image" src="./resources/gaitprojectlogo.png">
+				<div class="section-background position-static">
+					<!--<div id="visiblecombo">
+						<a href="http://websummit.net" target="_blank" >
+							<img class ="websummit-banner-classic" src="./resources/websummit_transparent.png">
+					        <img class ="websummit-banner-mobile" src="./resources/websummit_m2_2.jpg">
+					        <img class ="websummit-banner-ipad" src="./resources/websummit_m5_2.jpg">
+					    </a>
+					</div>-->
+
+					<div class="section-content mobile-padding">
+						<div class="section-block section-block-intro row greytext position-static">
+					        <img class ="logo-image" src="./resources/gaitprojectlogo.png">
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<section class="section section-two section-two-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy sidebar section-block section-block--last row">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy sidebar section-block section-block--last row position-relative">
 							<h2>
 								Something's working in your pocket
 							</h2>
@@ -59,9 +112,9 @@
 			</section>
 
 			<section class="section section-three section-three-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy sidebar section-block section-block--last row whitetext">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy sidebar section-block section-block--last row whitetext position-relative">
 							<h2>
 								Infinite Possibilities
 							</h2>
@@ -73,9 +126,9 @@
 			</section>
 
 			<section class="section section-two section-two-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy section-block section-block section-block--last row">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy section-block section-block section-block--last row position-relative">
 							<h2>
 								Connect the unconnectable
 							</h2>
@@ -87,9 +140,9 @@
 			</section>
 
 			<section class="section section-seven section-seven-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy sidebar section-block section-block--last row whitetext">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy sidebar section-block section-block--last row whitetext position-relative">
 							<h2>
 								You're in control
 							</h2>
@@ -101,9 +154,9 @@
 			</section>
 
 			<section class="section section-two section-two-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy sidebar section-block section-block section-block--last row">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy sidebar section-block section-block section-block--last row position-relative">
 							<h2>
 								Take your time
 							</h2>
@@ -115,9 +168,9 @@
 			</section>
 
 			<section class="section section-three section-three-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy sidebar section-block section-block--last row whitetext">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy sidebar section-block section-block--last row whitetext position-relative">
 							<h2>
 								Find your tribe
 							</h2>
@@ -128,10 +181,10 @@
 				</div>				
 			</section>
 
-			<section class="section section-five section-five-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy section-block section-block--last row whitetext">
+			<section class="section section-five section-five-background position-relative">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy section-block section-block--last row whitetext position-relative">
 							<h2>
 								Our Roadmap
 							</h2>
@@ -143,9 +196,9 @@
 			</section>
 
 			<section class="section section-four section-four-background">
-				<div class="section-background">
-					<div class="section-content">
-						<div class="section-copy section-block section-block--last row">
+				<div class="section-background position-relative">
+					<div class="section-content position-relative">
+						<div class="section-copy section-block section-block--last row position-relative">
 							<h2>
 								This fall in your app store
 							</h2>
@@ -159,7 +212,7 @@
 								<p></p>
 							    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_0ce6b138e8c145cd0f9976f44_39a03095d5" tabindex="-1" value=""></div>
-							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="sun-flower-button"></div>
+							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="sun-flower-button position-relative"></div>
 							    </div>
 							</form>
 							</div>
@@ -171,9 +224,9 @@
 						
 		</div>
 
-		<div class="footer-wrapper footer-background">
-			<footer id="globalfooter" class="footer footer-global" role="contentinfo">
-				<div>
+		<div class="footer-wrapper footer-background position-relative">
+			<footer id="globalfooter" class="footer footer-global position-relative" role="contentinfo">
+				<div class="position-relative">
 					<div class="gf-sosumi footer-sosumi footer-logo">
 						<a href="http://entropi.io" target="_blank">EntroPi</a>
 					</div>
@@ -208,6 +261,4 @@
 				</div>
 			</footer>
 		</div>
-	
-</div></div></div></div></div>
 </body></html>

@@ -104,16 +104,20 @@ body, input, textarea, select, button {
 	-moz-font-feature-settings: 'liga', 'kern'
 }
 a {
-	color: #08c
+	color: #08c;
+	outline: none;
 }
 a:visited, a:link, a:active {
-	text-decoration: none
+	text-decoration: none;
+	outline: none;
 }
 html.no-js a:hover {
-	text-decoration: none
+	text-decoration: none;
+	outline: none;
 }
 html.no-touch a:hover {
-	text-decoration: none
+	text-decoration: none;
+	outline: none;
 }
 h1 {
 	font-size: 64px;
@@ -3760,7 +3764,7 @@ html.oldie .section-content {
 	zoom: 1
 }
 .section-block:last-child, .section-block.section-block--last {
-	margin-bottom: 125px
+	margin-bottom: 60px
 }
 @media only screen and (max-width:1068px) {
 	.section-block:last-child, .section-block.section-block--last {
@@ -6723,6 +6727,12 @@ html.oldie[lang=ko-KR] .page-overview .section h3 {
 	height: auto;
 	background-position: center bottom
 }
+.page-overview .section-five.section .section-background {
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-position: center bottom
+}
 .page-overview .section-two.section .section-background.image-bleed-left {
 	background-position: 0 bottom
 }
@@ -7473,16 +7483,16 @@ html.oldie[lang=ko-KR] .page-overview .section-one p.intro {
 	margin-bottom: 0
 }
 .page-overview .section-one .section-block-intro {
-	padding-bottom: 125px
+	padding-bottom: 0px
 }
 @media only screen and (max-width:1068px) {
 	.page-overview .section-one .section-block-intro {
-		padding-bottom: 100px
+		padding-bottom: 0px
 	}
 }
 @media only screen and (max-width:735px) and (max-device-width:768px) {
 	.page-overview .section-one .section-block-intro {
-		padding-bottom: 75px
+		padding-bottom: 0px
 	}
 }
 .page-overview .section-one .section-block--last {
@@ -9168,3 +9178,116 @@ ul.share-buttons li{
 	  border-color: #D0D0D0;
 	}
 }
+#visiblecombo{
+position: fixed;
+visibility: hidden;
+}
+
+* html #visiblecombo{ /* Hide combo box from legacy browsers such as IE5-6? */
+display: none;
+}
+
+#visiblecombo select{
+background-color: #333;;
+}
+
+#visiblecombo .gobutton{
+font-weight: bold;
+padding: 0 3px;
+text-decoration: none;
+}
+
+#visiblecombo .gobutton:hover{
+background-color: #333;
+}
+.websummit-banner-mobile {
+	max-width:100%;
+	max-height:400px;
+	top:0px !important;
+	left:0px !important;
+}
+.websummit-banner-classic {
+	max-width:280px;
+	max-height:400px;
+}
+.websummit-banner-ipad {
+	max-width:100%;
+	max-height:400px;
+}
+
+.position-static {
+	position: static !important;
+}
+.position-relative {
+	position: relative !important;
+}
+
+@media only screen and (max-width:10000px) {
+		#visiblecombo{
+		position: fixed;
+		visibility: hidden;
+		}
+		#visiblecombo img.websummit-banner-mobile
+		{
+		display: none;
+		}
+		#visiblecombo img.websummit-banner-ipad
+		{
+		display: none;
+		}
+		#visiblecombo img.websummit-banner-classic
+		{
+		display: inline;
+		}
+}
+@media only screen and (max-width:1000px) {
+		#visiblecombo{
+		position: fixed;
+		visibility: hidden;
+		padding-top:0px;
+		text-align:center;
+		right:0px !important;
+		bottom:0px !important;
+		}
+		#visiblecombo img.websummit-banner-mobile
+		{
+		display: none;
+		}
+		#visiblecombo img.websummit-banner-ipad
+		{
+		display: inline;
+		}
+		#visiblecombo img.websummit-banner-classic
+		{
+		display: none;
+		}
+		.mobile-padding{
+			padding-top:280px !important;
+		}
+}
+@media only screen and (max-width:500px) {
+		#visiblecombo{
+		position: fixed;
+		visibility: hidden;
+		padding-top:0px;
+		text-align:center;
+		right:0px !important;
+		bottom:0px !important;
+		}
+		#visiblecombo img.websummit-banner-mobile
+		{
+		display: inline;
+		}
+		#visiblecombo img.websummit-banner-ipad
+		{
+		display: none;
+		}
+		#visiblecombo img.websummit-banner-classic
+		{
+		display: none;
+		}
+		.mobile-padding{
+			padding-top:280px !important;
+		}
+}
+

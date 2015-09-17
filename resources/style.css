@@ -481,13 +481,15 @@ p.lgray
 		font-size:25px;
 	}
 }
-a:visited, a:link, a:active {
+a, a:visited, a:link, a:active {
 	text-decoration: none;
 	color: #757575;
     cursor: auto;
+    outline: none;
 }
 a:hover
 {
 	text-decoration: none;
 	color: #585858;
+	outline: none;
 }
