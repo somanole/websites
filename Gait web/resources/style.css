@@ -7467,16 +7467,19 @@ html.oldie[lang=ko-KR] .page-overview .section-one p.intro {
 	}
 }
 .page-overview .section-one .section-background .section-content:first-child {
-	padding-top: 216px
+	padding-top: 10%;
+	padding-bottom:4%
 }
 @media only screen and (max-width:1068px) {
 	.page-overview .section-one .section-background .section-content:first-child {
-		padding-top: 192px
+		padding-top: 192px;
+		padding-bottom:13%
 	}
 }
 @media only screen and (max-width:735px) and (max-device-width:768px) {
 	.page-overview .section-one .section-background .section-content:first-child {
-		padding-top: 149px
+		padding-top: 149px;
+		padding-bottom:13%
 	}
 }
 .page-overview .section-one .section-background .section-content:first-child .section-block {
@@ -9289,5 +9292,8 @@ background-color: #333;
 		.mobile-padding{
 			padding-top:280px !important;
 		}
+}
+.paddingbottom{
+	padding-bottom:3% !important;
 }
 
