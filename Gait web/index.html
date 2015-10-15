@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
 
-		<title>Gait Project - Something's working in your pocket</title>
+		<title>Gait Project - Let your body talk</title>
 		<meta property="analytics-track" content="Gait Project - Index">
 		<meta name="Description" content="Ready to meet the one in the world that walks - and probably feels - just like you? You'd better start walking.">	
 		<meta property="og:url" content="http://www.gaitproject.com/">	
@@ -31,50 +31,16 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="./resources/favicon.ico">
 
-		<script type="text/javascript">
+	    <script>
+	   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		var floatingbanner={
-			
-			addoffset: [440, 15], 
-			comboid: "visiblecombo", 
-			location: ["top", "right"],
+	   ga('create', 'UA-68422146-2', 'auto');
+	   ga('send', 'pageview');
 
-			navigate:function(){
-			var selectobj=this.comboref.getElementsByTagName("select")[0]
-			if (selectobj.options[selectobj.selectedIndex].value!="default")
-				window.location=selectobj.options[selectobj.selectedIndex].value
-			},
-
-			floatcombo:function(){
-			var docElement=(document.compatMode=='CSS1Compat')? document.documentElement: document.body
-			if (this.location[0]=="top")
-				this.comboref.style.top=0+this.addoffset[0]+"px"
-			else if (this.location[0]=="bottom")
-				this.comboref.style.bottom=0+this.addoffset[0]+"px"
-			if (this.location[1]=="left")
-				this.comboref.style.left=0+this.addoffset[1]+"px"
-			else if (this.location[1]=="right")
-				this.comboref.style.right=0+this.addoffset[1]+"px"
-			},
-
-			init:function(){
-			var width=window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth
-			if (width<"1000"){
-				this.location=["top", "left"]
-				this.addoffset=[0, 0]
-			}
-			this.comboref=document.getElementById(this.comboid)
-			this.comboref.style.visibility="visible"
-			this.floatcombo()
-			}
-		}
-
-		if (window.addEventListener)
-		window.addEventListener("load", function(){floatingbanner.init()}, false)
-		else if (window.attachEvent)
-		window.attachEvent("onload", function(){floatingbanner.init()})
-
-		</script>
+	  </script>
 	</head>
 
 	<body class="page-overview">
@@ -102,7 +68,7 @@
 					<div class="section-content position-relative paddingbottom">
 						<div class="section-copy sidebar section-block section-block--last row position-relative">
 							<h2>
-								Something's working in your pocket
+								Let your body talk
 							</h2>
 							<h3>Bringing the human into technology.</h3>
 							<p>Technology that understands how you feel. Shaped by you.</p>
@@ -203,7 +169,7 @@
 								This fall in your app store
 							</h2>
 							<h3>Ready?</h3>
-							<h3>Join the Beta List and start walking!</h3>
+							<h3>Let's go for a walk.</h3>
 							<div id="mc_embed_signup">
 							<form action="//gaitproject.us11.list-manage.com/subscribe/post?u=0ce6b138e8c145cd0f9976f44&amp;id=39a03095d5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 							    <div id="mc_embed_signup_scroll">
@@ -212,7 +178,7 @@
 								<p></p>
 							    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_0ce6b138e8c145cd0f9976f44_39a03095d5" tabindex="-1" value=""></div>
-							    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="sun-flower-button position-relative"></div>
+							    <div class="clear"><input type="submit" value="Join the beta list" name="subscribe" id="mc-embedded-subscribe" class="sun-flower-button position-relative"></div>
 							    </div>
 							</form>
 							</div>
